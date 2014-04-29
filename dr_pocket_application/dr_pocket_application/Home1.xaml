@@ -1,0 +1,82 @@
+﻿<Page x:Class="WpfApplication1.Home1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="280"
+      Background="#6fa8dc"
+	Title="Home1">
+
+    <Grid>      
+        
+        <!-- Grid definiton -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />            
+        </Grid.RowDefinitions>
+        
+        <!-- Dr. Pocket Logo -->
+        <Image Grid.Column="0"
+               Grid.Row="0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Height="150"
+               Width="160" 
+               Name="image_logo"
+               Source="Resources\dr_pocket_logo.png" />
+
+        <!-- Profile 1 Button -->
+        <Button Grid.Column="0" 
+                Grid.Row="1"
+                Style="{StaticResource profileButtonStyle}"
+                Name="button_profile1"               
+                Content="Perfil 1" />
+
+        <!-- Profile 2 Button -->
+        <Button Grid.Column="0" 
+                Grid.Row="2"
+                Style="{StaticResource profileButtonStyle}"
+                Name="button_profile2"               
+                Content="Perfil 2" />
+
+        <!-- Profile 3 Button -->
+        <Button Grid.Column="0" 
+                Grid.Row="3"
+                Style="{StaticResource profileButtonStyle}"
+                Name="button_profile3"               
+                Content="Perfil 3" />
+
+        <!-- Profile 4 Button -->
+        <Button Grid.Column="0" 
+                Grid.Row="4"
+                Style="{StaticResource profileButtonStyle}"
+                Name="button_profile4"               
+                Content="Perfil 4" />
+        
+        <!-- Button Criar Perfil -->
+        <Button Grid.Column="0" 
+                Grid.Row="5"
+                Style="{StaticResource bigButtonStyle}"
+                Name="button_create_profile" Click="button_create_profile_Click">               
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Image Source="Resources\add-icon.png"
+					       Width="24"
+					       Height="24" />
+                    <TextBlock Text="Criar Perfil" 
+                               Padding="10"/>
+                </StackPanel>
+            </Button.Content>
+        </Button>       
+
+    </Grid>
+    
+</Page>

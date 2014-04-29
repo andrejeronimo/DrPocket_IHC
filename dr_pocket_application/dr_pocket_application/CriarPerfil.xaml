@@ -1,0 +1,180 @@
+﻿<Page x:Class="WpfApplication1.CriarPerfil"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="280"
+      Background="#6fa8dc"
+	Title="CriarPerfil">
+
+    <Grid>
+
+        <!-- Grid definiton -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Title Panel-->
+        <Rectangle Grid.Column="0"
+                   Grid.Row="0"
+                   Style="{StaticResource titleRectangleStyle}" />
+        
+        <!-- New Profile Image -->        
+        <Image Grid.Column="0"
+               Grid.Row="0"
+               Style="{StaticResource titleImageStyle}"             
+               Source="Resources\Male-user-add-icon.png" />        
+        
+        <!-- New Profile Title -->
+        <Label Grid.Column="0"
+               Grid.Row="0"
+               Style="{StaticResource titleLabelStyle}"
+               Content="Criar Perfil" />
+        
+        <!--              -->
+        <!-- Profile Data -->
+        <!--              -->
+        
+        <!-- Name -->
+        <Label Grid.Column="0" 
+               Grid.Row="1"
+               Style="{StaticResource profileLabelStyle}"
+               Content="Nome:" />
+
+        <TextBox Grid.Column="0" 
+                 Grid.Row="1"
+                 Style="{StaticResource profileTextBoxStyle}" />       
+
+        <!-- Age -->
+        <Label Grid.Column="0" 
+               Grid.Row="2"
+               Style="{StaticResource profileLabelStyle}"
+               Content="Idade:" />
+
+        <TextBox Grid.Column="0" 
+                 Grid.Row="2"
+                 Style="{StaticResource profileTextBoxStyle}" />
+
+        <!-- Weight and Height -->
+        <StackPanel Grid.Column="0" 
+                    Grid.Row="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center" >
+
+            <Label Style="{StaticResource profileLabelStyle}"
+                   Content="Peso:       " />
+
+            <TextBox Style="{StaticResource profileTextBoxStyle}"
+                     Width="40" />
+
+            <Label Style="{StaticResource profileLabelStyle}"
+                   Content="  Altura:      " />
+
+            <TextBox Style="{StaticResource profileTextBoxStyle}"
+                     Width="40" />
+
+        </StackPanel>
+
+        <!-- Sex -->
+        <StackPanel Grid.Column="0" 
+                    Grid.Row="4"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center" >
+
+            <Label Style="{StaticResource profileLabelStyle}"
+                   Content="Sexo:       " />
+
+            <RadioButton Style="{StaticResource profileRadioButtonStyle}"
+                         Content="Masculino    " />
+
+            <RadioButton Style="{StaticResource profileRadioButtonStyle}"
+                         Content="Feminino" />
+
+        </StackPanel>
+
+        <!-- Telephone -->
+        <Label Grid.Column="0" 
+               Grid.Row="5"
+               Style="{StaticResource profileLabelStyle}"
+               Content="Telefone:" />
+
+        <TextBox Grid.Column="0" 
+                 Grid.Row="5"
+                 Style="{StaticResource profileTextBoxStyle}" />        
+
+        <!-- Medic Problems Title -->
+        <StackPanel Grid.Column="0" 
+                    Grid.Row="6"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center" >
+
+            <Label Style="{StaticResource profileLabelStyle}"
+                   Content="Prolemas Médicos:" />
+
+            <Image Style="{StaticResource profileInfoIconStyle}"/>                   
+
+        </StackPanel>
+
+        <!-- Medic Problems Text Box -->        
+        <TextBox Grid.Column="0" 
+                 Grid.Row="7"
+                 Style="{StaticResource profileTextBoxStyle}"
+                 Height="30"
+                 Width="260"/>
+
+        <!-- Vaccines Title -->
+        <StackPanel Grid.Column="0" 
+                    Grid.Row="8"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center" >
+
+            <Label Style="{StaticResource profileLabelStyle}"
+                   Content="Vacinas:" />
+
+            <Image Style="{StaticResource profileInfoIconStyle}"/>
+
+        </StackPanel>
+
+        <!-- Vaccines Text Box -->
+        <TextBox Grid.Column="0" 
+                 Grid.Row="9"
+                 Style="{StaticResource profileTextBoxStyle}"
+                 Height="30"
+                 Width="260" />
+
+        <!-- Create Profile Button -->
+        <Button Grid.Column="0" 
+                Grid.Row="10"
+                Style="{StaticResource bigButtonStyle}"
+                Name="button_create_profile" >
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Image Source="Resources\add-icon.png"
+					       Width="24"
+					       Height="24" />
+                    <TextBlock Text="Criar Perfil" 
+                               Padding="10"/>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+
+    </Grid>
+</Page>
