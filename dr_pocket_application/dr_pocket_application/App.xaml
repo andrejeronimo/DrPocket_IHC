@@ -86,7 +86,28 @@
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="Source" Value="Resources\information-icon.png" />
-        </Style>      
+        </Style>
+
+        <!-- Small Button Style -->
+        <Style x:Key="smallButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Height" Value="30" />
+            <Setter Property="Width" Value="93" />
+            <Setter Property="Background" Value="#dddddd" />
+            <Setter Property="FontFamily" Value="Trebuchet MS" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontSize" Value="10" />
+        </Style>
+
+        <!-- Profile Text Box Style -->
+        <Style x:Key="profileTextBoxScrollStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10,5,10,5" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontFamily" Value="Trebuchet MS" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="AcceptsReturn" Value="True" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
 
     </Application.Resources>
 </Application>

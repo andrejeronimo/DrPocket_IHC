@@ -38,7 +38,7 @@
                 Grid.Row="1"
                 Style="{StaticResource profileButtonStyle}"
                 Name="button_profile1"               
-                Content="Perfil 1" />
+                Content="Perfil 1" Click="button_profile1_Click" />
 
         <!-- Profile 2 Button -->
         <Button Grid.Column="0" 

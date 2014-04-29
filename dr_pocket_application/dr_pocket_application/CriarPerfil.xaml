@@ -115,7 +115,7 @@
                Content="Telefone:" />
 
         <TextBox Grid.Column="0" 
-                 Grid.Row="5"
+                 Grid.Row="2"
                  Style="{StaticResource profileTextBoxStyle}" />        
 
         <!-- Medic Problems Title -->

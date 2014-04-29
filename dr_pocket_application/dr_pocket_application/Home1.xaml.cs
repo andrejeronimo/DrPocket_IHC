@@ -30,5 +30,12 @@ namespace WpfApplication1
             CriarPerfil createProfilePage = new CriarPerfil();
             this.NavigationService.Navigate(createProfilePage);
         }
+
+        private void button_profile1_Click(object sender, RoutedEventArgs e)
+        {
+            // View Profile 1 Page
+            AlterarPerfil changeProfilePage = new AlterarPerfil();
+            this.NavigationService.Navigate(changeProfilePage);
+        }
     }
 }
